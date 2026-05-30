@@ -1,0 +1,18 @@
+{
+  "id": "n8n-automatisation-workflow",
+  "title": "n8n en 2026 : l'outil d'automatisation qui remplace 5 apps en une",
+  "slug": "n8n-automatisation-workflow",
+  "category": "outils-productivite",
+  "tags": ["n8n", "Automatisation", "No-code", "Workflow", "Productivité"],
+  "author": {
+    "name": "Théo Moreau",
+    "bio": "Expert en automatisation & no-code"
+  },
+  "publishedAt": "2026-05-05T08:00:00Z",
+  "coverImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80",
+  "excerpt": "n8n s'est imposé comme l'outil d'automatisation de référence pour les développeurs et les équipes tech. Voici pourquoi il devrait être dans votre stack.",
+  "readingTime": 6,
+  "featured": false,
+  "draft": false,
+  "content": "<h2>Pourquoi n8n domine le no-code en 2026</h2><p>Zapier vieillissait, Make devenait complexe, Pipedream plafonnait. n8n a comblé le vide avec une approche hybride : <strong>low-code pour les développeurs, no-code pour les autres</strong>. Et le tout en self-hosted ou cloud, au choix.</p><h2>Les use cases qui ont tout changé</h2><p>En 2026, les workflows IA sont devenus le killer feature de n8n. Connecter un webhook entrant, le passer dans un LLM, enrichir les données depuis une base Airtable et envoyer un email personnalisé — tout ça en 15 minutes sans écrire une ligne de code serveur.</p><pre><code>// Exemple de workflow n8n en JSON\n{\n  \"nodes\": [\n    { \"type\": \"n8n-nodes-base.webhook\", \"name\": \"Trigger\" },\n    { \"type\": \"@n8n/n8n-nodes-langchain.openAi\", \"name\": \"Analyse IA\" },\n    { \"type\": \"n8n-nodes-base.gmail\", \"name\": \"Envoi email\" }\n  ]\n}</code></pre><h2>L'écosystème en 2026</h2><p>Plus de 400 intégrations natives, une communauté de 150 000 membres et un marketplace de templates qui couvre 90% des besoins courants. n8n Cloud propose désormais des agents IA préconfigurés qui s'auto-améliorent via du reinforcement learning basé sur les feedbacks utilisateurs.</p><h2>Comment démarrer</h2><p>La meilleure entrée reste l'auto-hébergement via Docker. En 5 minutes, vous avez une instance complète. Commencez par automatiser quelque chose de simple — vos notifications Slack, vos leads CRM — et laissez la complexité venir naturellement.</p>"
+}

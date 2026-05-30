@@ -1,0 +1,53 @@
+---
+description: Structure obligatoire d'un fichier JSON d'article dans content/articles/
+globs: content/articles/*.json
+alwaysApply: false
+---
+
+# Schéma JSON d'un article
+
+Chaque article est un fichier `.json` dans `content/articles/`. Le nom du fichier doit correspondre au slug.
+
+## Champs requis
+
+```json
+{
+  "id": "mon-article-slug",
+  "title": "Titre de l'article",
+  "slug": "mon-article-slug",
+  "category": "intelligence-artificielle",
+  "tags": ["tag1", "tag2"],
+  "author": {
+    "name": "Prénom Nom",
+    "bio": "Courte bio (optionnel)",
+    "avatar": "/authors/photo.jpg"
+  },
+  "publishedAt": "2026-05-30T09:00:00Z",
+  "updatedAt": "2026-05-30T09:00:00Z",
+  "excerpt": "Résumé court affiché dans les cards et meta description (1-2 phrases).",
+  "coverImage": "/covers/image.jpg",
+  "readingTime": 5,
+  "content": "<h2>Titre section</h2><p>Contenu en HTML...</p>",
+  "featured": false,
+  "draft": false
+}
+```
+
+## Règles
+
+- `slug` = identifiant unique, kebab-case, correspond au nom du fichier sans `.json`
+- `category` doit être l'un des 5 slugs définis dans `lib/types.ts`
+- `content` contient du HTML (pas du Markdown) — utiliser `<h2>`, `<p>`, `<strong>`, `<code>`, `<pre>`, `<blockquote>`
+- `readingTime` est en minutes (entier)
+- `publishedAt` au format ISO 8601
+- `draft: true` → l'article n'apparaît jamais en production
+- `featured: true` → l'article apparaît dans la section "À la une" de la homepage
+
+## Catégories valides
+| Slug | Label |
+|------|-------|
+| `intelligence-artificielle` | Intelligence Artificielle |
+| `developpement` | Développement |
+| `cybersecurite` | Cybersécurité |
+| `tech-innovation` | Tech & Innovation |
+| `outils-productivite` | Outils & Productivité |

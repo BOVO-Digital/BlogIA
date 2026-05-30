@@ -1,0 +1,19 @@
+{
+  "id": "gpt-5-ce-que-lon-sait",
+  "title": "GPT-5 : tout ce qu'on sait sur le prochain modèle d'OpenAI",
+  "slug": "gpt-5-ce-que-lon-sait",
+  "category": "intelligence-artificielle",
+  "tags": ["GPT-5", "OpenAI", "LLM", "IA générative"],
+  "author": {
+    "name": "Théo Moreau",
+    "bio": "Chercheur en IA & rédacteur tech"
+  },
+  "publishedAt": "2026-05-28T09:00:00Z",
+  "coverImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=900&q=80",
+  "excerpt": "OpenAI prépare GPT-5, son modèle le plus ambitieux à ce jour. Performances, multimodalité, raisonnement — voici ce que les indices et fuites révèlent.",
+  "readingTime": 6,
+  "featured": true,
+  "draft": false,
+  "tags_seo": ["openai gpt-5", "modèle ia 2026", "llm performance"],
+  "content": "<h2>GPT-5 approche à grands pas</h2><p>Depuis plusieurs mois, OpenAI tease discrètement le successeur de GPT-4o. Les indices s'accumulent : publications de recherche, offres d'emploi ciblées et déclarations de Sam Altman pointent tous vers une architecture fondamentalement repensée.</p><h2>Ce que les fuites révèlent</h2><p>Selon plusieurs sources proches de l'entreprise, GPT-5 serait entraîné sur un corpus multimodal massif incluant vidéos, audio et données synthétiques générées par des agents IA. Le modèle serait capable de <strong>raisonnement multi-étapes</strong> bien plus fiable que ses prédécesseurs.</p><blockquote>\"GPT-5 va changer la façon dont les développeurs pensent l'IA\" — Sam Altman, conférence Developers Day 2026</blockquote><h2>Multimodalité avancée</h2><p>L'un des axes majeurs serait une compréhension native de la vidéo en temps réel — une capacité absente des modèles actuels. Couplée à une latence réduite, cette fonctionnalité ouvrirait la voie à des assistants conversationnels capables de regarder et d'analyser une scène live.</p><h2>Date de sortie</h2><p>Aucune date officielle n'a été communiquée. Les estimations convergent vers le second semestre 2026. OpenAI semble prendre le temps nécessaire pour s'assurer de la sécurité du modèle avant tout déploiement public.</p>"
+}

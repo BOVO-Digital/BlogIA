@@ -1,0 +1,18 @@
+{
+  "id": "startups-ia-levees-records",
+  "title": "Startups IA : les levées de fonds records qui reconfigurent l'écosystème tech",
+  "slug": "startups-ia-levees-records",
+  "category": "tech-innovation",
+  "tags": ["Startups", "VC", "Investissement", "IA", "Tech"],
+  "author": {
+    "name": "Sofia Lemaire",
+    "bio": "Journaliste tech & analyste startup"
+  },
+  "publishedAt": "2026-05-10T07:00:00Z",
+  "coverImage": "https://images.unsplash.com/photo-1559526324-593bc073d938?w=900&q=80",
+  "excerpt": "Anthropic, Mistral, xAI… Les méga-rounds se multiplient. Décryptage de ces investissements colossaux et de ce qu'ils révèlent sur la course mondiale à l'IA.",
+  "readingTime": 5,
+  "featured": false,
+  "draft": false,
+  "content": "<h2>Une avalanche de milliards</h2><p>Le premier trimestre 2026 a battu tous les records : plus de <strong>80 milliards de dollars</strong> ont été investis dans des startups d'intelligence artificielle à travers le monde. Un chiffre qui dépasse l'ensemble de l'année 2023.</p><h2>Les grandes opérations</h2><p>Parmi les deals marquants : xAI a clôturé une série C à 12 milliards, Mistral AI a levé 2 milliards avec une valorisation qui dépasse les 10 milliards, et Anthropic reste en tête avec plus de 15 milliards levés depuis sa création.</p><h2>Ce que cela révèle</h2><p>Ces chiffres masquent une réalité plus nuancée. Si les valorisations s'envolent, les investisseurs misent sur des modèles économiques encore incertains. Le grand pari reste la monétisation à l'échelle — transformer des coûts d'inférence colossaux en revenus récurrents durables.</p><h2>L'Europe dans la course</h2><p>L'écosystème européen résiste mieux qu'attendu. Mistral et Aleph Alpha ont prouvé qu'il était possible de développer des modèles compétitifs hors des États-Unis, bénéficiant d'un cadre réglementaire plus clair avec l'AI Act.</p>"
+}

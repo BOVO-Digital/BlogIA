@@ -1,0 +1,43 @@
+---
+description: Lignes éditoriales pour la création de contenu du blog — ton, structure, SEO
+alwaysApply: false
+---
+
+# Lignes éditoriales BlogIA
+
+## Thématiques couvertes
+BlogIA couvre **exclusivement** la tech, l'IA et le numérique. Les 5 catégories sont la frontière éditoriale.
+
+## Ton et style
+- Français courant, professionnel mais accessible
+- Pas de jargon sans explication
+- Phrases courtes, paragraphes de 3-5 lignes max
+- Toujours apporter de la valeur : **analyse > résumé de communiqué de presse**
+
+## Structure recommandée d'un article
+1. `<h2>` d'accroche (pose le problème ou la nouveauté)
+2. Corps principal avec 3-5 sections `<h2>`
+3. Exemples concrets, chiffres sourcés, citations si possible
+4. Conclusion ou call-to-action implicite
+
+## SEO
+- `title` : 50-60 caractères, inclure le mot-clé principal
+- `excerpt` : 140-160 caractères, résumé actionnable
+- `tags` : 3-5 tags pertinents, en minuscules kebab-case si multi-mots
+- `readingTime` : 1 min ≈ 200 mots de contenu HTML
+
+## Contenu HTML (`content`)
+Utiliser uniquement ces balises :
+- `<h2>`, `<h3>` pour les titres
+- `<p>` pour les paragraphes
+- `<strong>` pour l'emphase
+- `<code>` pour le code inline, `<pre><code>` pour les blocs
+- `<blockquote>` pour les citations
+- `<ul>`, `<ol>`, `<li>` pour les listes
+- `<a href="">` pour les liens
+
+## À éviter
+- Titres clickbait sans substance
+- Articles de moins de 400 mots
+- Répétitions de mots-clés forcées
+- Contenu dupliqué d'autres sources sans ajout de valeur

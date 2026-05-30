@@ -1,0 +1,18 @@
+{
+  "id": "nextjs-15-nouveautes",
+  "title": "Next.js 15 : les nouveautés qui changent tout pour les développeurs",
+  "slug": "nextjs-15-nouveautes",
+  "category": "developpement",
+  "tags": ["Next.js", "React", "Web", "Performance"],
+  "author": {
+    "name": "Camille Dupont",
+    "bio": "Développeuse fullstack & contributrice OSS"
+  },
+  "publishedAt": "2026-05-20T08:00:00Z",
+  "coverImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&q=80",
+  "excerpt": "Next.js 15 apporte des améliorations majeures : Turbopack stable, React 19 natif, Server Actions améliorées et une DX encore plus fluide.",
+  "readingTime": 7,
+  "featured": false,
+  "draft": false,
+  "content": "<h2>Turbopack enfin stable</h2><p>Après deux ans de développement, Turbopack — le remplaçant de Webpack — est officiellement stable dans Next.js 15. Les gains de performance au démarrage et au hot-reload sont spectaculaires : <strong>jusqu'à 10x plus rapide</strong> sur les gros projets.</p><h2>React 19 de série</h2><p>Next.js 15 embarque React 19 par défaut. Cela signifie l'accès natif aux <code>use()</code>, aux Server Components améliorés et aux Actions optimistes sans librairie tierce.</p><pre><code>// Exemple de Server Action avec React 19\nasync function createPost(formData: FormData) {\n  'use server';\n  const title = formData.get('title') as string;\n  await db.post.create({ data: { title } });\n  revalidatePath('/blog');\n}</code></pre><h2>Partial Prerendering en production</h2><p>Le Partial Prerendering (PPR), expérimental depuis la v14, passe en stable. Il permet de combiner SSG et SSR au niveau des composants — une révolution pour les pages hybrides.</p><h2>Migration depuis Next.js 14</h2><p>La migration est globalement non-breaking. Le seul changement notable concerne les cookies et headers qui sont désormais asynchrones dans les Server Components. Un codemod automatique est fourni.</p>"
+}

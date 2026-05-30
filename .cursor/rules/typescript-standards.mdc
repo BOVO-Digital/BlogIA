@@ -1,0 +1,42 @@
+---
+description: Standards TypeScript stricts pour le projet BlogIA
+globs: **/*.ts
+alwaysApply: false
+---
+
+# Standards TypeScript
+
+## Types stricts
+
+```typescript
+// ✅ BON — types explicites
+function getArticleBySlug(slug: string): Article | undefined { ... }
+
+// ❌ MAUVAIS — any interdit
+function getArticleBySlug(slug: any): any { ... }
+```
+
+## Types centralisés
+- Tous les types métier vivent dans `lib/types.ts`
+- Ne pas redéfinir `Article`, `Category`, `CategoryMeta` ailleurs
+- Importer depuis `@/lib/types`
+
+## Gestion d'erreur
+
+```typescript
+// ✅ BON
+if (!article) notFound(); // dans les pages Next.js
+return articles.find(a => a.slug === slug) ?? undefined; // dans les utils
+
+// ❌ MAUVAIS
+return articles.find(a => a.slug === slug)!; // non-null assertion bannie
+```
+
+## Nullabilité
+- Préférer `undefined` à `null` pour les valeurs optionnelles
+- Toujours gérer le cas `undefined` avant d'accéder aux propriétés
+- Utiliser l'opérateur `?.` et `??` pour les accès sécurisés
+
+## Enums et unions
+- Utiliser des **union types** (`"a" | "b"`) plutôt que des `enum`
+- Le type `Category` est une union string définie dans `lib/types.ts`

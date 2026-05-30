@@ -1,0 +1,18 @@
+{
+  "id": "cybersecurite-agents-ia-menaces",
+  "title": "Quand les agents IA deviennent une menace pour la cybersécurité",
+  "slug": "cybersecurite-agents-ia-menaces",
+  "category": "cybersecurite",
+  "tags": ["Cybersécurité", "Agents IA", "Phishing", "Menaces"],
+  "author": {
+    "name": "Alexandre Renard",
+    "bio": "Expert en cybersécurité offensive & défensive"
+  },
+  "publishedAt": "2026-05-15T10:00:00Z",
+  "coverImage": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&q=80",
+  "excerpt": "Les agents IA autonomes ouvrent une nouvelle ère d'attaques cyber : phishing ultra-personnalisé, exploitation automatisée de CVE et ingénierie sociale à grande échelle.",
+  "readingTime": 8,
+  "featured": true,
+  "draft": false,
+  "content": "<h2>L'émergence des cyber-agents malveillants</h2><p>En 2026, les outils d'IA agentique ne sont plus réservés aux équipes défensives. Des groupes criminels utilisent désormais des agents LLM pour automatiser et personnaliser leurs attaques à une échelle sans précédent.</p><h2>Phishing de nouvelle génération</h2><p>Les attaques de spear-phishing traditionnelles nécessitaient une recherche manuelle sur la victime. Aujourd'hui, des agents IA peuvent <strong>scraper automatiquement LinkedIn, GitHub et les réseaux sociaux</strong> pour construire un profil détaillé, puis rédiger un email parfaitement contextualisé en quelques secondes.</p><blockquote>Le taux de clics sur les emails de phishing générés par IA atteint 54%, contre 12% pour les campagnes classiques. — Rapport Verizon DBIR 2026</blockquote><h2>Exploitation automatisée de CVE</h2><p>Des agents spécialisés scannent en continu les nouvelles vulnérabilités publiées et génèrent automatiquement des exploits fonctionnels avant que les équipes de sécurité aient eu le temps de patcher. La fenêtre entre publication d'un CVE et exploitation est passée de jours à minutes.</p><h2>Comment se défendre ?</h2><p>La riposte passe par des agents défensifs tout aussi puissants : analyse comportementale en temps réel, détection d'anomalies basée sur des modèles de langage, et simulation d'attaques IA en environnement sandboxé. La course aux armements IA dans le cyberespace ne fait que commencer.</p>"
+}

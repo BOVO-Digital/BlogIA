@@ -1,0 +1,67 @@
+---
+description: Conventions React & Next.js pour les composants et pages du blog
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# Conventions React & Next.js
+
+## Composants
+
+- Toujours des **composants fonctionnels** avec TypeScript
+- `"use client"` uniquement si nécessaire (interactivité, hooks browser)
+- Préférer les **Server Components** par défaut (moins de JS côté client)
+- Props via `interface Props {}`, jamais `type Props =`
+
+```tsx
+// ✅ BON
+interface Props {
+  article: Article;
+  featured?: boolean;
+}
+export default function ArticleCard({ article, featured = false }: Props) { ... }
+
+// ❌ MAUVAIS
+export default function ArticleCard(props: any) { ... }
+```
+
+## Pages (App Router)
+
+- Toujours exporter `generateStaticParams` pour les routes dynamiques
+- Exporter `generateMetadata` pour le SEO sur chaque page
+- Utiliser `notFound()` de `next/navigation` si ressource introuvable
+
+## Imports
+
+- Alias `@/` pour les imports absolus (ex : `@/lib/articles`, `@/components/ArticleCard`)
+- Jamais de chemins relatifs `../../`
+
+## Données
+
+- Lire les articles uniquement via les fonctions de `@/lib/articles`
+- **Ne jamais** appeler `fs` directement dans une page ou un composant
+- Les fonctions `lib/articles.ts` sont synchrones (pas d'`async`/`await` nécessaire)
+
+## Icônes — règle absolue
+
+- **Toujours utiliser des icônes SVG** — les emojis sont **strictement interdits** dans l'UI
+- Librairie officielle : `lucide-react` (`import { Bot, Shield } from "lucide-react"`)
+- Pour les catégories : utiliser `<CategoryIcon />` de `@/components/CategoryIcon`
+- Seule exception autorisée : le contenu éditorial HTML dans le champ `content` des articles JSON
+
+```tsx
+// ❌ INTERDIT — emoji dans l'UI
+<span>🤖 Intelligence Artificielle</span>
+<span>⭐ À la une</span>
+
+// ✅ CORRECT — icône SVG
+import { Bot, Star } from "lucide-react";
+<Bot className="w-4 h-4" /> Intelligence Artificielle
+<Star className="w-4 h-4 text-yellow-500" /> À la une
+```
+
+## Styles
+
+- Tailwind CSS uniquement — pas de CSS modules, pas de styled-components
+- Classes utilitaires directement dans le JSX
+- Couleurs du projet : fond `#f5f5f7`, accents `violet-*`, orange CTA, texte `gray-*`

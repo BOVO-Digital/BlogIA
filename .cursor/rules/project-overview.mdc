@@ -1,0 +1,42 @@
+---
+description: Vue d'ensemble du projet BlogIA — stack, structure et conventions globales
+alwaysApply: true
+---
+
+# BlogIA — Blog Tech & IA
+
+## Stack
+- **Framework** : Next.js 15 (App Router)
+- **UI** : React 19 + Tailwind CSS v4
+- **Langage** : TypeScript strict
+- **Contenu** : Chaque article = un fichier JSON dans `content/articles/`
+
+## Structure clé
+
+```
+content/articles/     ← fichiers JSON des articles (une article = un fichier)
+lib/
+  types.ts            ← types TypeScript + définition des 5 catégories
+  articles.ts         ← fonctions de lecture des JSON (getAllArticles, getArticleBySlug…)
+  utils.ts            ← helpers (formatDate, categoryColorClass…)
+components/           ← composants React réutilisables
+app/
+  page.tsx            ← homepage
+  blog/page.tsx       ← liste de tous les articles
+  blog/[slug]/        ← page article individuelle
+  categorie/[slug]/   ← page par catégorie
+```
+
+## Les 5 catégories (slugs exacts)
+- `intelligence-artificielle`
+- `developpement`
+- `cybersecurite`
+- `tech-innovation`
+- `outils-productivite`
+
+## Règles globales
+- Toujours utiliser l'App Router (jamais `pages/`)
+- Tout le texte visible en **français**
+- Fond sombre : `bg-[#0a0a0f]`, couleurs zinc/violet
+- Pas de librairie externe pour lire les JSON — `fs` natif Node.js uniquement
+- Les articles en `draft: true` ne sont jamais affichés
