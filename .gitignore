@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Agent system prompts (local only — never commit)
+AGENT_SYSTEM_PROMPT.md
