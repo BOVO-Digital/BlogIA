@@ -1,0 +1,18 @@
+{
+  "id": "xcena-135m-memoire-centree-ia-infrastructure",
+  "title": "XCENA lève 135 M$ : la mémoire, nouveau goulot de l'IA",
+  "slug": "xcena-135m-memoire-centree-ia-infrastructure",
+  "category": "tech-innovation",
+  "tags": ["xcena", "semi-conducteurs", "infrastructure-ia", "cxl"],
+  "author": {
+    "name": "Sofia Lemaire",
+    "bio": "Journaliste tech"
+  },
+  "publishedAt": "2026-05-31T11:00:00Z",
+  "excerpt": "La startup sud-coréenne XCENA lève 135 millions de dollars pour sa puce MX1 : calcul en mémoire via CXL. Pourquoi l'inférence IA bute sur la RAM, pas le GPU.",
+  "coverImage": "https://images.unsplash.com/photo-1559526324-593bc073d938?w=900&q=80",
+  "readingTime": 6,
+  "featured": false,
+  "draft": true,
+  "content": "<h2>Le pari : ce n'est pas le compute, c'est la mémoire</h2><p>Le 29 mai 2026, XCENA a clôturé une <strong>Series B de 135 millions de dollars</strong> à une valorisation de 570 millions. Le message est direct : le goulot d'étranglement de l'IA en inférence n'est plus le GPU — c'est le déplacement de données entre processeur, accélérateur et DRAM. Chaque requête LLM multiplie les allers-retours coûteux en énergie et en latence.</p><p>Fondée par d'anciens de Samsung et SK Hynix, la startup propose une approche « memory-centric » : traiter les données là où elles résident, via une puce MX1 connectée en <strong>CXL 3.x</strong> (Compute Express Link).</p><h2>Comment fonctionne la puce MX1</h2><p>Le MX1 se présente comme un périphérique mémoire distant sur un lien PCIe 6.0. Du point de vue du CPU, c'est une région NUMA supplémentaire — mais à l'intérieur, des milliers de cœurs RISC-V custom (1,4 GHz), des moteurs vectoriels FP16/FP32 et jusqu'à <strong>1 To de DDR5-8400</strong> exécutent des opérations sans ramener les tenseurs vers le processeur hôte.</p><p>Les cas d'usage ciblés : cache KV des LLM, recherche vectorielle, orchestration de données d'inférence. XCENA affirme qu'un serveur équipé pourrait remplacer la charge de <strong>dix machines</strong> classiques — un ratio à prendre avec prudence tant que les déploiements clients ne sont pas publics.</p><blockquote>« The bottleneck is structural — routing through some of the most expensive chips on every single request » — Jimmy Lai, analyse de la course à l'infrastructure IA, écosystème hyperscale 2026</blockquote><h2>Calendrier et risques</h2><p>Le MX1 reste un prototype. La production de masse (variante MX1P) est visée fin 2026 chez Samsung Foundry, avec des revenus attendus en <strong>2027</strong>. Total levé : 185 millions de dollars depuis 2022 (seed, Series A, Series B). Plus de 90 employés entre Pangyo (Corée) et Sunnyvale (Californie).</p><p>Le risque principal : l'adoption de CXL par les hyperscalers. Sans intégration profonde dans AWS, Azure ou GCP, une puce brillante peut rester un POC de niche. XCENA est en discussions avec des investisseurs internationaux pour financer l'expansion commerciale.</p><h2>Contexte : la guerre des gigawatts</h2><p>Cette levée s'inscrit dans une semaine chargée : SoftBank annonce 75 Md€ de data centers en France, EngineAI livre ses robots humanoïdes T800 en série, et les États-Unis poussent Stargate (500 Md$). Tous ces projets partagent un besoin : <strong>plus de mémoire proche du calcul</strong>, moins de gaspillage énergétique.</p><h2>Ce que les décideurs tech doivent retenir</h2><p>Si vous dimensionnez une stack d'inférence, surveillez l'écosystème CXL et les startups memory-centric. Le coût par token ne se jouera pas uniquement sur le choix du modèle — mais sur l'architecture matérielle sous-jacente. XCENA n'a pas encore gagné la partie, mais elle pose la bonne question : et si on arrêtait de déplacer les données ?</p>"
+}
